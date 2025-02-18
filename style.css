@@ -60,10 +60,6 @@ main {
     box-shadow: 1px 1px 5px black;
 }
 
-.btn:hover {
-    background-color: #053d5b;
-}
-
 .button2 {
     position: relative;
 }
@@ -87,7 +83,6 @@ main {
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    background-color: green;
     background-image: url("sim.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
