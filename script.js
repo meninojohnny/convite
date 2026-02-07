@@ -1,18 +1,15 @@
-function clicouNao() {
-    var top = gerarNumero(200, -200) + "px";
-    var letf = gerarNumero(50, -200) + "px";
+const btnNo = document.querySelector(".no");
+const content = document.querySelector(".content");
+const content2 = document.querySelector(".content2");
 
-    document.querySelector(".button2").style.top = top;
-    document.querySelector(".button2").style.left = letf;
+function clicouNao() {
+    const x = Math.random() * 300 - 150;
+    const y = Math.random() * 200 - 100;
+
+    btnNo.style.transform = `translate(${x}px, ${y}px)`;
 }
 
 function clicouSim() {
-    document.querySelector(".content").style.display = "none"
-    document.querySelector(".content2").style.display = "flex"
-
+    content.style.display = "none";
+    content2.style.display = "flex";
 }
-
-function gerarNumero(max, min) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
